@@ -70,7 +70,7 @@ const Header = () => {
             </a>
           </li>
           <li className="social-item">
-            <a href="mailto:sams.mndebele@studentintellect.co.za" target="_blank" rel="noopener noreferrer" className="social-link text-light">
+            <a href="mailto:sams.mndebele@avidco.co.za" target="_blank" rel="noopener noreferrer" className="social-link text-light">
               <i className="fa-regular fa-envelope"></i>
             </a>
           </li>

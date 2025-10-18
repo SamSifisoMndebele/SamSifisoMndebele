@@ -27,13 +27,16 @@ const Navbar = () => {
             </li>
           </ul>
           <ul className="navbar-nav brand">
-            <img src="assets/img/avatar.jpg" alt="" className="brand-img" />
+            <img src="/img/avatar.jpg" alt="" className="brand-img" />
             <li className="brand-txt">
               <h5 className="brand-title">Sam Sifiso Mndebele</h5>
               <div className="brand-subtitle">Full Stack Developer</div>
             </li>
           </ul>
           <ul className="navbar-nav ml-auto">
+            {/*<li className="nav-item">*/}
+            {/*  <a href="#blog" className="nav-link">Blog</a>*/}
+            {/*</li>*/}
             <li className="nav-item">
               <a href="#contact" className="nav-link">Contact</a>
             </li>

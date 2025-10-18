@@ -100,7 +100,7 @@ const Contact = () => {
                 <div className="col-10">
                   <h6 className="d-inline">Email :</h6>
                   <br />
-                  <span className="text-muted"> sams.mndebele@studentintellect.co.za</span>
+                  <span className="text-muted"> sams.mndebele@avidco.co.za</span>
                 </div>
               </div>
               <ul className="social-icons pt-4">
@@ -115,12 +115,12 @@ const Contact = () => {
                   </a>
                 </li>
                 <li className="social-item">
-                  <a href="https://wa.me/27721646430?text=Hi Sam" target="_blank" rel="noopener noreferrer" className="social-link text-dark">
+                  <a href="https://wa.me/27721646430?text=%3E%20From%20Portfolio%0AHi%20Sam,%0A" target="_blank" rel="noopener noreferrer" className="social-link text-dark">
                     <i className="fa-brands fa-whatsapp" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li className="social-item">
-                  <a href="mailto:sams.mndebele@studentintellect.co.za" target="_blank" rel="noopener noreferrer" className="social-link text-dark">
+                  <a href="mailto:sams.mndebele@avidco.co.za" target="_blank" rel="noopener noreferrer" className="social-link text-dark">
                     <i className="fa-regular fa-envelope" aria-hidden="true"></i>
                   </a>
                 </li>

@@ -8,8 +8,15 @@ const About = () => {
           <span className="line mb-4"></span>
           <h5 className="mb-3">A Web and Mobile Developer</h5>
           <p className="mt-20">
-            I'm an Android and Web Developer with a knack for crafting seamless digital experiences. With expertise in creating dynamic, user-friendly applications and websites, I thrive on solving complex problems with innovative solutions. My passion lies in bridging the gap between design and functionality, ensuring every project I work on is both visually stunning and technically sound. Whether it's building a mobile app from scratch or designing a responsive web interface, I bring a blend of creativity and technical prowess to everything I do.
+            I'm an Android and Web Developer with a knack for crafting seamless digital experiences.
+              With expertise in creating dynamic, user-friendly applications and websites,
+              I thrive on solving complex problems with innovative solutions.
+              My passion lies in bridging the gap between design and functionality,
+              ensuring every project I work on is both visually stunning and technically sound.
+              Whether it's building a mobile app from scratch or designing a responsive web interface,
+              I bring a blend of creativity and technical prowess to everything I do.
           </p>
+            {/*<a href="/docs/resume" target="_blank" className="btn btn-primary btn-rounded"><i className="ti-printer pr-2"></i>View Resume</a>*/}
         </div>
         <div className="col-lg-4 about-card">
           <h3 className="font-weight-light">Personal Info</h3>
