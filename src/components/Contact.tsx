@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { db } from '@/firebase/init-firebase';
 import { collection, addDoc } from 'firebase/firestore';
-import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
-    const { toast } = useToast();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -28,18 +26,18 @@ const Contact = () => {
                 message: formData.message,
                 timestamp: new Date(),
             });
-            toast({
-                title: "Message Sent",
-                description: "Your message has been sent successfully!",
-            });
+            // toast({
+            //     title: "Message Sent",
+            //     description: "Your message has been sent successfully!",
+            // });
             setFormData({ name: '', email: '', phone: '', message: '' });
         } catch (error) {
             console.error('Error adding document: ', error);
-            toast({
-                title: "Error",
-                description: "Failed to send message. Please try again.",
-                variant: "destructive",
-            });
+            // toast({
+            //     title: "Error",
+            //     description: "Failed to send message. Please try again.",
+            //     variant: "destructive",
+            // });
         } finally {
             setIsLoading(false);
         }
