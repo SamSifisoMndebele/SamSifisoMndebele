@@ -19,10 +19,10 @@ $(document).ready(function(){
 const backTop = $(".btn-back_to_top");
 $(window).scroll(function() {
     if($(document).scrollTop() > 400) {
-        backTop.css('visibility', 'visible');
+        backTop.css('visibility', 'visible !important');
     }
     else if($(document).scrollTop() < 400) {
-        backTop.css('visibility', 'hidden');
+        backTop.css('visibility', 'hidden !important');
     }
 });
 backTop.click(function() {
@@ -55,3 +55,14 @@ $(window).on("load", function() {
         }), !1
     });
 });
+
+// // active navbar link
+// $(window).on('scroll', function() {
+//     const scrollDistance = $(window).scrollTop();
+//     $('section').each(function(i) {
+//         if ($(this).position().top <= scrollDistance) {
+//             $('.navbar-nav a.active').removeClass('active');
+//             $('.navbar-nav a').eq(i).addClass('active');
+//         }
+//     });
+// });
