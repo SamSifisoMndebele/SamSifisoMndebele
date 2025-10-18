@@ -12211,12 +12211,17 @@ pre .code {
     z-index: 2;
     box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
     width: 170px;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
 .navbar .brand .brand-txt {
-    position: relative;
-    bottom: -20px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -weblit-transform: translate(-50%, -50%);
     opacity: 0;
     -webkit-transition: 1s;
     transition: 1s;
