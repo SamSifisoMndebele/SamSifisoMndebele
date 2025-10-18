@@ -1,26 +1,14 @@
 import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
-import Header from "@/components/Header.tsx";
-import Navbar from "@/components/Navbar.tsx";
-import About from "@/components/About.tsx";
-import Resume from "@/components/Resume.tsx";
-import Stats from "@/components/Stats.tsx";
-import Services from "@/components/Services.tsx";
-import Hire from "@/components/Hire.tsx";
-import Contact from "@/components/Contact.tsx";
-import Footer from "@/components/Footer.tsx";
+import { BrowserRouter } from 'react-router-dom';
+import Index from "@/pages/Index";
+import { Toaster } from "@/components/ui/toaster";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <Header/>
-        <Navbar/>
-        <About/>
-        <Resume/>
-        <Stats/>
-        <Services/>
-        {/*<Pricing/>*/}
-        <Hire/>
-        <Contact/>
-        <Footer/>
+        <BrowserRouter>
+            <Index />
+        </BrowserRouter>
+        <Toaster />
     </StrictMode>,
 )

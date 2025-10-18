@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { db } from '@/firebase/init-firebase';
 import { collection, addDoc } from 'firebase/firestore';
+import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
+    const { toast } = useToast();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         phone: '',
         message: '',
     });
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -16,6 +19,7 @@ const Contact = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setIsLoading(true);
         try {
             await addDoc(collection(db, 'ContactUs'), {
                 name: formData.name,
@@ -24,11 +28,20 @@ const Contact = () => {
                 message: formData.message,
                 timestamp: new Date(),
             });
-            alert('Message sent successfully!');
-            setFormData({ name: '', email: '', phone: '', message: '' }); // Clear form
+            toast({
+                title: "Message Sent",
+                description: "Your message has been sent successfully!",
+            });
+            setFormData({ name: '', email: '', phone: '', message: '' });
         } catch (error) {
             console.error('Error adding document: ', error);
-            alert('Failed to send message. Please try again.');
+            toast({
+                title: "Error",
+                description: "Failed to send message. Please try again.",
+                variant: "destructive",
+            });
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -58,7 +71,7 @@ const Contact = () => {
                                         id="name"
                                         name="name"
                                         placeholder="Name(s) *"
-                                        pattern="[a-zA-Z '.]{2,}"
+                                        pattern="[a-zA-Z \'.]{2,}"
                                         required
                                         value={formData.name}
                                         onChange={handleChange}
@@ -106,8 +119,13 @@ const Contact = () => {
                                         className="form-control text-center btn btn-primary"
                                         id="button"
                                         style={{height: '50px'}}
+                                        disabled={isLoading} // Disable button when loading
                                     >
-                                        Send Message
+                                        {isLoading ? (
+                                            <><i className="fa fa-spinner fa-spin mr-2"></i>Sending...</>
+                                        ) : (
+                                            "Send Message"
+                                        )}
                                     </button>
                                 </div>
                             </form>
