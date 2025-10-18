@@ -26,7 +26,7 @@ const Navbar = () => {
                             <a href="#resume" className="nav-link">Resume</a>
                         </li>
                     </ul>
-                    <ul className="navbar-nav brand">
+                    <ul className="navbar-nav brand d-flex align-items-center">
                         <img src="/img/avatar.jpg" alt="" className="brand-img"/>
                         <li className="brand-txt">
                             <h5 className="brand-title">Sam Sifiso Mndebele</h5>

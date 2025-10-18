@@ -31,27 +31,3 @@ backTop.click(function() {
     }, 1000);
     return false;
 });
-
-// portfolio filters
-$(window).on("load", function() {
-    const t = $(".portfolio-container");
-    t.isotope({
-        filter: ".new",
-        animationOptions: {
-            duration: 750,
-            easing: "linear",
-            queue: !1
-        }
-    }), $(".filters a").click(function() {
-        $(".filters .active").removeClass("active"), $(this).addClass("active");
-        const i = $(this).attr("data-filter");
-        return t.isotope({
-            filter: i,
-            animationOptions: {
-                duration: 750,
-                easing: "linear",
-                queue: !1
-            }
-        }), !1
-    });
-});
