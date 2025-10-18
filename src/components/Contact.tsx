@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { db } from '@/firebase/init-firebase';
-import { collection, addDoc } from 'firebase/firestore';
+import React, {useState} from 'react';
+import {db} from '@/firebase/init-firebase';
+import {addDoc, collection} from 'firebase/firestore';
 import toast from 'react-hot-toast';
 
 const Contact = () => {
@@ -13,7 +13,7 @@ const Contact = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setFormData({...formData, [e.target.name]: e.target.value});
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -28,7 +28,7 @@ const Contact = () => {
                 timestamp: new Date(),
             });
             toast.success("Your message has been sent successfully!"); // Use toast.success
-            setFormData({ name: '', email: '', phone: '', message: '' });
+            setFormData({name: '', email: '', phone: '', message: ''});
         } catch (error) {
             console.error('Error adding document: ', error);
             toast.error("Failed to send message. Please try again."); // Use toast.error
@@ -139,10 +139,7 @@ const Contact = () => {
                                 <div className="col-10">
                                     <h6 className="d-inline">Address :</h6>
                                     <br/>
-                                    <span className="text-muted">
-                    104 Clau-Clau, No. 2<br/>
-                    Kabokweni, 1245, MP
-                  </span>
+                                    <span className="text-muted">104 Clau-Clau, No. 2<br/>Kabokweni, 1245, MP</span>
                                 </div>
                             </div>
                             <div className="row mb-2">
