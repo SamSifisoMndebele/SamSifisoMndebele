@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {db} from '@/firebase/init-firebase';
 import {addDoc, collection} from 'firebase/firestore';
 import toast from 'react-hot-toast';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -20,6 +21,7 @@ const Contact = () => {
         e.preventDefault();
         setIsLoading(true);
         try {
+            // 1. Add document to Firestore
             await addDoc(collection(db, 'ContactUs'), {
                 name: formData.name,
                 email: formData.email,
@@ -27,11 +29,34 @@ const Contact = () => {
                 message: formData.message,
                 timestamp: new Date(),
             });
-            toast.success("Your message has been sent successfully!"); // Use toast.success
+            toast.success("Your message has been sent successfully!");
             setFormData({name: '', email: '', phone: '', message: ''});
+
+            // 2. Send email using EmailJS
+            try {
+                const serviceId = 'service_avig0vq';
+                const templateId = 'template_2xcbpsp';
+                const userId = 'sPZ8jDDw09S_DcnEk'; // This is your Public Key
+
+                const templateParams = {
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone || 'N/A',
+                    message: formData.message,
+                };
+
+                await emailjs.send(serviceId, templateId, templateParams, userId);
+                console.log('Email successfully sent via EmailJS!');
+                // toast.success("Confirmation email sent!"); // Optional: if you want a separate toast for email
+
+            } catch (emailError) {
+                console.error('Error sending email via EmailJS:', emailError);
+                toast.error("Failed to send confirmation email. Please check EmailJS setup.");
+            }
+
         } catch (error) {
-            console.error('Error adding document: ', error);
-            toast.error("Failed to send message. Please try again."); // Use toast.error
+            console.error('Error adding document to Firestore: ', error);
+            toast.error("Failed to send message. Please try again.");
         } finally {
             setIsLoading(false);
         }
@@ -125,7 +150,7 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-4">
                         <div className="contact-info-card">
-                            <h4 className="contact-title">Get in touch</h4>
+                            <h4 className="contact-title">Get in Touch</h4>
                             <div className="row mb-2">
                                 <div className="col-1 pt-1 mr-1"><i className="ti-mobile icon-md"></i></div>
                                 <div className="col-10">
