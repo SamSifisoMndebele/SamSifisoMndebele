@@ -1,4 +1,37 @@
+import React, { useState } from 'react';
+import { db } from '@/firebase/init-firebase';
+import { collection, addDoc } from 'firebase/firestore';
+
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        try {
+            await addDoc(collection(db, 'ContactUs'), {
+                name: formData.name,
+                email: formData.email,
+                phone: formData.phone,
+                message: formData.message,
+                timestamp: new Date(),
+            });
+            alert('Message sent successfully!');
+            setFormData({ name: '', email: '', phone: '', message: '' }); // Clear form
+        } catch (error) {
+            console.error('Error adding document: ', error);
+            alert('Failed to send message. Please try again.');
+        }
+    };
+
     return (
         <div className="section contact" id="contact">
             <iframe
@@ -17,7 +50,7 @@ const Contact = () => {
                     <div className="col-lg-8">
                         <div className="contact-form-card">
                             <h4 className="contact-title">Get in Touch</h4>
-                            <form action="/" method="post">
+                            <form onSubmit={handleSubmit}>
                                 <div className="form-group">
                                     <input
                                         type="text"
@@ -27,6 +60,8 @@ const Contact = () => {
                                         placeholder="Name(s) *"
                                         pattern="[a-zA-Z '.]{2,}"
                                         required
+                                        value={formData.name}
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div className="form-group">
@@ -37,6 +72,8 @@ const Contact = () => {
                                         name="email"
                                         placeholder="Email *"
                                         required
+                                        value={formData.email}
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div className="form-group">
@@ -46,6 +83,8 @@ const Contact = () => {
                                         id="phone"
                                         name="phone"
                                         placeholder="Phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div className="form-group">
@@ -57,6 +96,8 @@ const Contact = () => {
                       minLength={16}
                       placeholder="Message *"
                       required
+                      value={formData.message}
+                      onChange={handleChange}
                   ></textarea>
                                 </div>
                                 <div className="form-group text-center">
