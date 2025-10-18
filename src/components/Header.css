@@ -14,6 +14,7 @@
     animation: balance 1.5s ease-out;
     transform-origin: bottom left;
 }
+
 @keyframes balance {
     0%, 100% {
         transform: rotate(0deg);
@@ -29,6 +30,7 @@
     animation: shrinkjump 1s ease-in-out;
     transform-origin: bottom center;
 }
+
 @keyframes shrinkjump {
     10%, 35% {
         transform: scale(2, .2) translate(0, 0);
@@ -47,6 +49,7 @@
 .header-title span:nth-child(8).active {
     animation: rotate 1s ease-out;
 }
+
 @keyframes rotate {
     20%, 80% {
         transform: rotateY(180deg);
@@ -61,6 +64,7 @@
 .header-title span:nth-child(7).active {
     animation: toplong 1.5s linear;
 }
+
 @keyframes toplong {
     10%, 40% {
         transform: translateY(-48vh) scaleY(1);
