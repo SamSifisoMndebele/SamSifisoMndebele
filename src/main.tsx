@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <BrowserRouter>
             <Index />
-            <Toaster />
+            <Toaster position="bottom-center" />
         </BrowserRouter>
     </StrictMode>
 )
