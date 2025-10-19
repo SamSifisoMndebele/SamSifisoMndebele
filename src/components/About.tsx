@@ -26,7 +26,7 @@ const About = () => {
                         <li><span>Family Name</span> : Mndebele</li>
                         <li><span>Birthdate</span> : 15 March</li>
                         <li><span>Nationality</span> : South African</li>
-                        <li><span>Email</span> : sams.mndebele@studentintellect.co.za</li>
+                        <li><span>Email</span> : sams.mndebele@avidco.co.za</li>
                         <li><span>Phone</span> : +27 72 164 6430</li>
                         <li>
                             <span>Address</span> : 104 Clau-Clau, No. 2<br/>
@@ -48,7 +48,7 @@ const About = () => {
                             </a>
                         </li>
                         <li className="social-item">
-                            <a href="mailto:sams.mndebele@studentintellect.co.za" target="_blank"
+                            <a href="mailto:sams.mndebele@avidco.co.za" target="_blank"
                                rel="noopener noreferrer" className="social-link">
                                 <i className="fa-regular fa-envelope"></i>
                             </a>
