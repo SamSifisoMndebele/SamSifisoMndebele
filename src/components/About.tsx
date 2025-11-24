@@ -5,9 +5,9 @@ const About = () => {
                 <div className="col-lg-4 about-card">
                     <h3 className="font-weight-light">Who am I ?</h3>
                     <span className="line mb-4"></span>
-                    <h5 className="mb-3">A Web and Mobile Developer</h5>
+                    <h5 className="mb-3">A Full Stack Developer</h5>
                     <p className="mt-20">
-                        I'm a Full Stack Developer with a knack for crafting seamless digital experiences.
+                        I'm a developer with a knack for crafting seamless digital experiences.
                         With expertise in creating dynamic, user-friendly applications and websites,
                         I thrive on solving complex problems with innovative solutions.
                         My passion lies in bridging the gap between design and functionality,

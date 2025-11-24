@@ -53,41 +53,7 @@ const Resume = () => {
                                 </div>
                             </div>
                             <div className="card-body pb-2">
-                                <h6>Java and Kotlin</h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{width: '99%'}}
-                                         aria-valuenow={99} aria-valuemin={0} aria-valuemax={100}></div>
-                                </div>
-                                <h6>Python</h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{width: '75%'}}
-                                         aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}></div>
-                                </div>
-                                <h6>SQL</h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{width: '95%'}}
-                                         aria-valuenow={95} aria-valuemin={0} aria-valuemax={100}></div>
-                                </div>
-                                <h6>Assembly</h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{width: '80%'}}
-                                         aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}></div>
-                                </div>
-                                <h6>HTML5 & CSS3</h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{width: '85%'}}
-                                         aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}></div>
-                                </div>
-                                <h6>JavaScript</h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{width: '90%'}}
-                                         aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}></div>
-                                </div>
-                                <h6>PHP</h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{width: '60%'}}
-                                         aria-valuenow={60} aria-valuemin={0} aria-valuemax={100}></div>
-                                </div>
+                                <img className="card-img mb-3" src="https://skillicons.dev/icons?i=androidstudio,idea,supabase,firebase,gcp,aws,python,react,vite,docker,ktor,latex,bash,linux,windows,git,github,java,kotlin,ts,js,deno,rider,dotnet,cs,cpp,clion,vscode,nodejs,html,css,ai,tensorflow&perline=7" alt="My Skills"/>
                             </div>
                         </div>
                         <div className="card">
@@ -107,11 +73,6 @@ const Resume = () => {
                                 <div className="progress mb-3">
                                     <div className="progress-bar bg-danger" role="progressbar" style={{width: '97%'}}
                                          aria-valuenow={97} aria-valuemin={0} aria-valuemax={100}></div>
-                                </div>
-                                <h6>Pedi</h6>
-                                <div className="progress mb-3">
-                                    <div className="progress-bar bg-danger" role="progressbar" style={{width: '40%'}}
-                                         aria-valuenow={40} aria-valuemin={0} aria-valuemax={100}></div>
                                 </div>
                             </div>
                         </div>
