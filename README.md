@@ -17,13 +17,9 @@ My programming stack includes: Kotlin, Java, Python, C#, C++, JS, and Shell scri
 [//]: # (- **Computer Networks**: Understanding connectivity, protocols, and distributed systems)
 
 ## 📉 GitHub Stats 🌟
-<img alt="Sam Sifiso Mndebele Github Stats" src="https://github-readme-stats.vercel.app/api/?username=SamSifisoMndebele&show_icons=true&include_all_commits=true&count_private=true&theme=material-palenight&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&line_height=28&rank_icon=github" height="192px"/>
-<img alt="Sam Sifiso Mndebele Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamSifisoMndebele&langs_count=20&layout=compact&theme=material-palenight&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866" height="192px"/>
-<img alt="Sam Sifiso Mndebele Contribution Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=SamSifisoMndebele&theme=dracula&bg_color=1F222E&title_color=F85D7F&point=F8D866&line=F85D7F&color=a6accd&hide_border=true&radius=4.5" />
-
-[//]: # (![Sam's GitHub Stats]&#40;https://github-readme-stats.vercel.app/api?username=SamSifisoMndebele&show_icons=true&theme=material-palenight&hide_border=true&#41;  )
-[//]: # (![Top Languages]&#40;https://github-readme-stats.vercel.app/api/top-langs/?username=SamSifisoMndebele&layout=compact&theme=material-palenight&hide_border=true&#41;  )
-[//]: # (![Contribution Graph]&#40;https://github-readme-activity-graph.vercel.app/graph?username=SamSifisoMndebele&theme=dracula&hide_border=true&#41;)
+![Sam's GitHub Stats](https://github-readme-stats-ochre-nu-60.vercel.app/api?username=SamSifisoMndebele&show_icons=true&theme=material-palenight&hide_border=true)  
+![Top Languages](https://github-readme-stats-ochre-nu-60.vercel.app/api/top-langs/?username=SamSifisoMndebele&layout=compact&theme=material-palenight&hide_border=true)  
+![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=SamSifisoMndebele&theme=dracula&hide_border=true)
 
 ## 🐍 My contributions game 🎮
 <picture>
