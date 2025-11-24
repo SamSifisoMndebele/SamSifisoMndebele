@@ -23,7 +23,8 @@ My programming stack includes: Kotlin, Java, Python, C#, C++, JS, and Shell scri
 ## 📉 GitHub Stats 🌟
 ![Sam's GitHub Stats](https://github-readme-stats.vercel.app/api?username=SamSifisoMndebele&show_icons=true&theme=material-palenight&hide_border=true)  
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SamSifisoMndebele&layout=compact&theme=material-palenight&hide_border=true)  
-![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=SamSifisoMndebele&theme=dracula&hide_border=true)
+
+[//]: # (![Contribution Graph]&#40;https://github-readme-activity-graph.vercel.app/graph?username=SamSifisoMndebele&theme=dracula&hide_border=true&#41;)
 
 ## 🐍 My contributions game 🎮
 <picture>
