@@ -17,8 +17,6 @@ My programming stack includes: Kotlin, Java, Python, C#, C++, JS, and Shell scri
 [//]: # (- **Computer Networks**: Understanding connectivity, protocols, and distributed systems)
 
 ## 📉 GitHub Stats 🌟
-![Sam's GitHub Stats](https://github-readme-stats-worker.sams-mndebele.workers.dev/api?username=SamSifisoMndebele&show_icons=true&theme=material-palenight&hide_border=true)
-![Top Languages](https://github-readme-stats-worker.sams-mndebele.workers.dev/api/top-langs/?username=SamSifisoMndebele&layout=compact&theme=material-palenight&hide_border=true)
 ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=SamSifisoMndebele&theme=dracula&hide_border=true)
 
 ## 🐍 My contributions game 🎮
